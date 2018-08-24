@@ -1,0 +1,5 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (TextFighterPROTOTYPE.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+  TextFighter.vcxproj -> C:\Users\s189064\source\repos\TextFighter\x64\Release\TextFighter.exe

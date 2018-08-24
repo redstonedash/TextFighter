@@ -1,0 +1,12 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (TextFighterPROTOTYPE.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+c:\users\s189064\source\repos\textfighter\textfighter\main.cpp(99): warning C4244: 'argument': conversion from 'double' to 'const unsigned __int64', possible loss of data
+c:\users\s189064\source\repos\textfighter\textfighter\main.cpp(111): warning C4244: 'argument': conversion from 'int' to 'float32', possible loss of data
+c:\users\s189064\source\repos\textfighter\textfighter\main.cpp(118): warning C4244: 'argument': conversion from 'int' to 'float32', possible loss of data
+c:\users\s189064\source\repos\textfighter\textfighter\main.cpp(143): warning C4244: 'argument': conversion from 'int' to 'float32', possible loss of data
+c:\users\s189064\source\repos\textfighter\textfighter\main.cpp(207): warning C4244: '=': conversion from 'float' to 'SHORT', possible loss of data
+c:\users\s189064\source\repos\textfighter\textfighter\main.cpp(208): warning C4244: '=': conversion from 'float' to 'SHORT', possible loss of data
+c:\users\s189064\source\repos\textfighter\textfighter\main.cpp(209): warning C4244: '=': conversion from 'float' to 'SHORT', possible loss of data
+c:\users\s189064\source\repos\textfighter\textfighter\main.cpp(210): warning C4244: '=': conversion from 'float' to 'SHORT', possible loss of data
+  TextFighter.vcxproj -> C:\Users\s189064\source\repos\TextFighter\x64\Debug\TextFighter.exe

@@ -1,0 +1,16 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (TextFighterPROTOTYPE.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.cpp
+c:\users\s189064\source\repos\textfighter\textfighter\main.cpp(8): error C2871: 'System': a namespace with this name does not exist
+c:\users\s189064\source\repos\textfighter\textfighter\main.cpp(91): error C2653: 'Console': is not a class or namespace name
+c:\users\s189064\source\repos\textfighter\textfighter\main.cpp(91): error C2065: 'LargestWindowWidth': undeclared identifier
+c:\users\s189064\source\repos\textfighter\textfighter\main.cpp(128): error C2653: 'Console': is not a class or namespace name
+c:\users\s189064\source\repos\textfighter\textfighter\main.cpp(128): error C2065: 'LargestWindowWidth': undeclared identifier
+c:\users\s189064\source\repos\textfighter\textfighter\main.cpp(142): warning C4305: '-=': truncation from 'double' to 'float'
+c:\users\s189064\source\repos\textfighter\textfighter\main.cpp(144): warning C4305: '+=': truncation from 'double' to 'float'
+c:\users\s189064\source\repos\textfighter\textfighter\main.cpp(173): error C2653: 'Console': is not a class or namespace name
+c:\users\s189064\source\repos\textfighter\textfighter\main.cpp(173): error C2065: 'LargestWindowWidth': undeclared identifier
+c:\users\s189064\source\repos\textfighter\textfighter\main.cpp(174): error C2653: 'Console': is not a class or namespace name
+c:\users\s189064\source\repos\textfighter\textfighter\main.cpp(174): error C2065: 'LargestWindowHeight': undeclared identifier
+c:\users\s189064\source\repos\textfighter\textfighter\main.cpp(175): error C2653: 'Console': is not a class or namespace name
+c:\users\s189064\source\repos\textfighter\textfighter\main.cpp(175): error C2065: 'LargestWindowWidth': undeclared identifier
+c:\users\s189064\source\repos\textfighter\textfighter\main.cpp(175): error C2065: 'LargestWindowHeight': undeclared identifier
