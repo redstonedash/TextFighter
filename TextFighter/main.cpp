@@ -37,6 +37,16 @@ float32 timeStep = 1.0f / 60.0f;
 int32 velocityIterations = 6;
 int32 positionIterations = 2;
 
+bool clamp(int v, int low, int high)
+{
+	if (v < low)
+		return low;
+	else if (v > high)
+		return high;
+	else
+		return v;
+}
+
 void GoToXY(int column, int line)
 {
 	COORD coord;
