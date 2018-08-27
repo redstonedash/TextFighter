@@ -49,18 +49,6 @@ bool clamp(int v, int low, int high)
 		return v;
 }
 
-bool clamp(float v, float low, float high)
-{
-	if (low > high)
-		return clamp (v, high, low);
-	else if (v < low)
-		return low;
-	else if (v > high)
-		return high;
-	else
-		return v;
-}
-
 void GoToXY(int column, int line)
 {
 	COORD coord;
