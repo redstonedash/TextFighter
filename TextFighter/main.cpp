@@ -39,7 +39,9 @@ int32 positionIterations = 2;
 
 bool clamp(int v, int low, int high)
 {
-	if (v < low)
+	if (low > high)
+		return clamp (v, high, low);
+	else if (v < low)
 		return low;
 	else if (v > high)
 		return high;
@@ -49,7 +51,9 @@ bool clamp(int v, int low, int high)
 
 bool clamp(float v, float low, float high)
 {
-	if (v < low)
+	if (low > high)
+		return clamp (v, high, low);
+	else if (v < low)
 		return low;
 	else if (v > high)
 		return high;
