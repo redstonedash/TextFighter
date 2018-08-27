@@ -37,72 +37,29 @@ float32 timeStep = 1.0f / 60.0f;
 int32 velocityIterations = 6;
 int32 positionIterations = 2;
 
-int clamp(int v, int low, int high)
-{
-	if (low > high)
-		return clamp (v, high, low);
-	else if (v < low)
-		return low;
-	else if (v > high)
+int clamp(int v, int low, int high) {
+	if(low > high) {
+		return clamp (v, high, low)
+	}
+	else if(v < low) {
+		return low
+	}
+	else if(v > high) {
 		return high;
-	else
+	}
+	else {
 		return v;
+	}
 }
 
-void GoToXY(int column, int line)
-{
+void GoToXY(int column, int line){
 	COORD coord;
 	coord.X = column;
 	coord.Y = line;
-	if (!SetConsoleCursorPosition(hOut, coord)) //TODO handle error
-	{
+	if (!SetConsoleCursorPosition(hOut, coord)) { //TODO handle error
 		std::cout << "AHHH";
 	}
 }
-
-/*struct charNode
-{
-	char data;
-	charNode *next;
-};
-
-class list //i did not wright this code, url to source:https://www.codementor.io/codementorteam/a-comprehensive-guide-to-implementation-of-singly-linked-list-using-c_plus_plus-ondlm5azr
-{
-private:
-	charNode *head, *tail;
-public:
-	list()
-	{
-		head = NULL;
-		tail = NULL;
-	}
-	void insert_position(int pos, int value)
-	{
-		charNode *pre = new charNode;
-		charNode *cur = new charNode;
-		charNode *temp = new charNode;
-		cur = head;
-		for (int i = 1; i<pos; i++)
-		{
-			pre = cur;
-			cur = cur->next;
-		}
-		temp->data = value;
-		pre->next = temp;
-		temp->next = cur;
-	}
-	void display()
-	{
-		charNode *temp = new charNode;
-		temp = head;
-		while (temp != NULL)
-		{
-			std::cout << temp->data;
-			temp = temp->next;
-		}
-	}
-	//this list lacks the ability to shrink, doing so would cause issues, hence the feature is not supported
-};*/
 
 void displayCharecter(int x,int y, char c) {
 	//width 240
