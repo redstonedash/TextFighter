@@ -108,9 +108,10 @@ void displayCharecter(int x,int y, char c) {
 	//width 240
 	//height 84
 	
-	screenBuffer.at((fmax(fmin(x, Console::LargestWindowWidth-1), 0)) +
-		             Console::LargestWindowWidth *
-		            (fmax(fmin(y, Console::LargestWindowHeight-1), 0))) = c;
+	x = clamp (x, 0, Console::LargestWindowWidth-1);
+	y = clamp (y, 0, Console::LargestWindowHeight-1);
+	
+	screenBuffer.at( x + Console::LargestWindowWidth * y ) = c;
 }
 
 class Platform {
