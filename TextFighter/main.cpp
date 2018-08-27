@@ -37,7 +37,7 @@ float32 timeStep = 1.0f / 60.0f;
 int32 velocityIterations = 6;
 int32 positionIterations = 2;
 
-bool clamp(int v, int low, int high)
+int clamp(int v, int low, int high)
 {
 	if (low > high)
 		return clamp (v, high, low);
