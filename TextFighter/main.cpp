@@ -210,13 +210,11 @@ void update(Platform p[], Player &player) {
 }
 
 int main() { //main game loop
-	newScreenBuffer = CreateConsoleScreenBuffer(GENERIC_READ |           // read/write access 
-												GENERIC_WRITE,
-												FILE_SHARE_READ |
-												FILE_SHARE_WRITE,        // shared 
-												NULL,                    // default security attributes 
-												CONSOLE_TEXTMODE_BUFFER, // must be TEXTMODE 
-												NULL);                   // reserved; must be NULL
+	newScreenBuffer = CreateConsoleScreenBuffer(	GENERIC_READ | GENERIC_WRITE, // read/write access
+							FILE_SHARE_READ | FILE_SHARE_WRITE,        // shared 
+							NULL,                    // default security attributes 
+							CONSOLE_TEXTMODE_BUFFER, // must be TEXTMODE 
+							NULL);                   // reserved; must be NULL
 	assert(newScreenBuffer != INVALID_HANDLE_VALUE);
 	
 	ZeroMemory(&state, sizeof(XINPUT_STATE));
