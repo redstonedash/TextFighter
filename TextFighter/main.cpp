@@ -189,10 +189,8 @@ public:
 void update(Platform p[], Player &player) {
 	world.Step(timeStep, velocityIterations, positionIterations);
 	XInputGetState(0, &state);
-	float x = ((float)state.Gamepad.sThumbLX<1500 && (float)state.Gamepad.sThumbLX>-1500) ? 0 :
-		((float)state.Gamepad.sThumbLX / 32767);
-	float y = ((float)state.Gamepad.sThumbLY<1500 && (float)state.Gamepad.sThumbLY>-1500) ? 0 :
-		((float)state.Gamepad.sThumbLY / 32767);
+	float x = (abs(state.Gamepad.sThumbLX)<1500) ? 0 : ((float)state.Gamepad.sThumbLX / 32767);
+	float y = (abs(state.Gamepad.sThumbLY)<1500) ? 0 : ((float)state.Gamepad.sThumbLY / 32767);
 	for (int i = 0; i < NUMBER_OF_PLATFORMS; i++) {
 		p[i].display();
 	}
