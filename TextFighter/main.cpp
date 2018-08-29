@@ -39,10 +39,10 @@ int32 positionIterations = 2;
 
 int clamp(int v, int low, int high) {
 	if(low > high) {
-		return clamp (v, high, low)
+		return clamp (v, high, low);
 	}
 	else if(v < low) {
-		return low
+		return low;
 	}
 	else if(v > high) {
 		return high;
